@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <title>Wish List</title>
+    <link rel="shortcut icon"  type='image/x-icon' href="Animals/favicon.ico" />
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <style>
+      .details-bar.cleanslate {
+        display: none !important;
+      }
+    </style>
+
+  </head>
+  <body style="background: #d9ead3ff;" >
+
+    <nav class="navbar bg-dark navbar-dark navbar-fixed-top">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span><br>
+      </button>
+      <a class="navbar-brand" href="#" style="margin-left:;margin-right: auto;display: block; width:50%;">Rancho Laguna's Heart</a>
+
+      <div class="collapse navbar-collapse" id="collapsibleNavbar" style="text-align:center;">
+        <b>
+          <ul class="navbar-nav">
+            <a href="index.html" style="color:white;">Home</a>
+
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color:white;">About Us
+                <span class="caret"></span></a>
+              <ul class="dropdown-menu" style="background:#343b40; text-align:center;">
+                <li><a href="History.html"style="color:white;">History</a></li>
+                <li><a href="Animals.html"style="color:white;">Animals</a></li>
+                <li><a href="Staff.html"style="color:white;">Staff</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#"style="color:white;">Programs
+                <span class="caret"></span></a>
+              <ul class="dropdown-menu" style="background:#343b40; text-align:center;">
+                <li><a href="Equine%20Therapy.html"style="color:white;">Equine Therapy</a></li>
+                <li><a href="Therapeutic%20Volunteering.html"style="color:white;">Therapeutic Volunteering</a></li>
+              </ul>
+            </li>
+
+
+            <li><a href="How%20you%20can%20help.html" style="color:white;">How You Can Help</a></li>
+            <li><a href="Adopt%20a%20horse.html" style="color:white;">Adopt a Horse</a></li>
+            <li><a href="Contact%20Us.html"style="color:white;">Contact Us</a></li>
+            <li><a href="Coffee%20Fundraiser.html"style="color:white;">Coffee Fundraiser</a></li>
+            <li><a href="Wish%20list.html" style="color:#9bb2c2;">Wish List</a></li>
+          </ul>
+        </b>
+      </div>  
+    </nav>
+    <br>
+
+    <div class="container-fluid">
+      <h3>Wishlist</h3>
+      <div id='div'></div>
+      <div id="320589879598623272" style="width: 100%; overflow-y: hidden;" class="wcustomhtml" align="center"><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input name="cmd" value="_s-xclick" type="hidden">
+        <input name="hosted_button_id" value="BKAKBP5399D4J" type="hidden">
+        <input src="Ppal.png" name="submit" alt="PayPal - The safer, easier way to pay online!" type="image" border="0" style="width:50%;">
+        <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" border="0">
+        </form>
+      </div>
+      <br>
+      <br>
+      <br>
+      <h5 align="center"><a href="Contact%20Us.html">Contact us</a> if you have any of these!</h5>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyAKQQXd0KfaperzFYOJYy4MGflmn-D-occ",
+        authDomain: "sitemanager-f1ede.firebaseapp.com",
+        databaseURL: "https://sitemanager-f1ede.firebaseio.com",
+        projectId: "sitemanager-f1ede",
+        storageBucket: "",
+        messagingSenderId: "627603341991"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script>
+      firebase.database().ref('Site/Wishlist/List').once('value').then(function(snapshot) {
+
+
+        var list = snapshot.val();
+        list = list.split(',');
+        var html = '<ul style="list-style-type:square">';
+
+        for(var i=0; i<list.length; i++) {
+          html += '<li>' + list[i] + '</li>';
+        }
+
+        html += '</ul>';
+        
+        document.getElementById("div").innerHTML = html;
+
+
+      });
+
+    </script>
+
+  </body>
+</html>
+
+

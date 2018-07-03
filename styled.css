@@ -1,0 +1,322 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.details-bar.cleanslate {
+  display: none !important;
+}
+
+
+
+#wrapper {
+  min-height: 10%; 
+  background-color:#0082c9;
+}
+#screen {
+  min-height: 100%; 
+  background-color:#568fea;
+  margin: 0px;
+  border-radius: 0px;
+}
+#signup {
+  min-height: 5%; 
+  background-color:#568fea;
+  margin: 0px;
+  border-radius: 0px;
+}
+#rcorners3 {
+  border-radius: 5px;
+  background: #0a3170;
+  padding: 10px; 
+  min-height: 5%; 
+  color:#f2f2f2;
+  font-family:verdana;
+  box-shadow: 3px 3px 5px 6px rgba(0, 14, 205, 0.7);
+}
+#converter {
+  border-radius: 10px;
+  background: #0075b5;
+  padding: 10px; 
+  min-height: 15%; 
+  color:#f2f2f2;
+  font-family:verdana;
+  width: 50%;
+  position: relative;
+  left: 25%;
+  text-align: center;
+  vertical-align: middle;
+
+}
+#itanks{
+  border-radius: 10px;
+  background: #911300;
+  padding: 10px; 
+  min-height: 15%; 
+  color:#f2f2f2;
+  font-family:verdana;
+  width: 50%;
+  position: relative;
+  left: 25%;
+  text-align: center;
+  vertical-align: middle;
+}
+#vids{
+  border-radius: 10px;
+  background: #ffab84;
+  padding: 10px; 
+  min-height: 15%; 
+  color:#f2f2f2;
+  font-family:verdana;
+  width: 50%;
+  position: relative;
+  left: 25%;
+  text-align: center;
+  vertical-align: middle;
+}
+#tetris{
+  border-radius: 10px;
+  background: #e3d022;
+  padding: 10px; 
+  min-height: 15%; 
+  color:#f2f2f2;
+  font-family:verdana;
+  width: 50%;
+  position: relative;
+  left: 25%;
+  text-align: center;
+  vertical-align: middle;
+}
+#AI{
+  border-radius: 10px;
+  background: #09b7a1;
+  padding: 10px; 
+  min-height: 15%; 
+  color:#f2f2f2;
+  font-family:verdana;
+  width: 50%;
+  position: relative;
+  left: 25%;
+  text-align: center;
+  vertical-align: middle;
+}
+#pong{
+  border-radius: 10px;
+  background: #ff5353;
+  padding: 10px; 
+  min-height: 15%; 
+  color:#6a6aff;
+  font-family:verdana;
+  width: 50%;
+  position: relative;
+  left: 25%;
+  text-align: center;
+  vertical-align: middle;
+}
+#beta{
+  border-radius: 10px;
+  background: #2C3539;
+  padding: 10px; 
+  min-height: 15%; 
+  color:#f2f2f2;
+  font-family:verdana;
+  width: 50%;
+  position: relative;
+  left: 25%;
+  text-align: center;
+  vertical-align: middle;
+}
+#Mario{
+  border-radius: 10px;
+  background: #ba0009;
+  padding: 10px; 
+  min-height: 15%; 
+  color:#00a510;
+  font-family:verdana;
+  width: 50%;
+  position: relative;
+  left: 25%;
+  text-align: center;
+  vertical-align: middle;
+}
+#LearnToFly{
+  border-radius: 10px;
+  background: #d3e4ff;
+  padding: 10px; 
+  min-height: 15%; 
+  color:#464d59;
+  font-family:verdana;
+  width: 50%;
+  position: relative;
+  left: 25%;
+  text-align: center;
+  vertical-align: middle;
+}
+#Leaf{
+  border-radius: 10px;
+  background: #004f00;
+  padding: 10px; 
+  min-height: 15%; 
+  color:#f2f2f2;
+  font-family:verdana;
+  width: 50%;
+  position: relative;
+  left: 25%;
+  text-align: center;
+  vertical-align: middle;
+}
+#virus{
+  border-radius: 10px;
+  background: #000000;
+  padding: 10px; 
+  min-height: 15%; 
+  color:#00ff00;
+  font-family:monospace;
+  width: 50%;
+  position: relative;
+  left: 25%;
+  text-align: center;
+  vertical-align: middle;
+}
+#APP{
+  border-radius: 10px;
+  background: #004f00;
+  padding: 10px; 
+  min-height: 90%; 
+  color:#f2f2f2;
+  font-family:verdana;
+  width: 110%;
+  position: relative;
+  left: -3%;
+  text-align: center;
+  vertical-align: middle;
+}
+#time {
+  border-radius: 2.5px;
+  background: #568fea;
+  padding: 5px;  
+  color:#f2f2f2;
+  font-family:verdana;
+  box-shadow: inset 0 0 10px rgba(0, 6, 206, 0.57);
+
+}
+.details-bar.cleanslate {
+  display: none !important;
+}
+#user {
+  border-radius: 5px;
+  background: #0a3170;
+  padding: 10px;  
+  color:#f2f2f2;
+  font-family:verdana;
+
+}
+#btn {
+  border-radius: 5px;
+  background: #b8bab9;
+  padding: 2px; 
+  color:#ffffff;
+  font-family:verdana;
+  width: 100%;
+  border: 1px solid #000000;
+
+}
+#naam {
+  color:#ffffff;
+  font-family:verdana;
+  width: 33%;
+}
+#usern {
+  color:#ffffff;
+  font-family:verdana;
+  width: 33%;
+}
+#timerow {
+  color:#ffffff;
+  font-family:verdana;
+  width: 33%;
+}
+.table {
+  width: 100%;
+}
+#username {
+  border-radius: 5px;
+  background: #ffffff;
+  padding: 10px; 
+  color:#00858e;
+  font-family:verdana;
+  width: 95%;
+  border: 1px solid #000000;
+}
+#dacode {
+  border-radius: 5px;
+  background: #ffffff;
+  padding: 10px; 
+  color:#00858e;
+  font-family:verdana;
+  width: 95%;
+  border: 1px solid #000000;
+}
+#pwd {
+  border-radius: 5px;
+  background: #ffffff;
+  padding: 10px; 
+  color:#276b33;
+  font-family:monospace;
+  font-size: 12px;
+  width: 95%;
+  border: 1px solid #000000;
+
+}
+#check {
+  border-radius: 5px;
+  background: #ffffff;
+  padding: 10px; 
+  color:#276b33;
+  font-family:monospace;
+  font-size: 12px;
+  width: auto;
+  border: 1px solid #000000;
+
+}
+#login {
+  color:#000000;
+  font-family:verdana;
+}
+#field {
+  border-radius: 5px;
+  padding: 10px; 
+  color:#00858e;
+  font-family:verdana;
+  width: 90%;
+  border: 1px solid #000000;
+  box-shadow:         3px 10px 5px 6px rgba(0, 0, 0, 0.59);}
+#username1 {
+  border-radius: 5px;
+  background: #ffffff;
+  padding: 10px; 
+  color:#00858e;
+  font-family:verdana;
+  width: 90%;
+  border: 1px solid #000000;
+}
+#pwd1 {
+  border-radius: 5px;
+  background: #ffffff;
+  padding: 10px; 
+  color:#276b33;
+  font-family:monospace;
+  width: 95%;
+  border: 1px solid #000000;
+}
+#login1 {
+  color:#000000;
+  font-family:verdana;
+}
+#field1	 {
+  border-radius: 5px;
+  padding: 10px; 
+  color:#00858e;
+  font-family:verdana;
+  width: 95%;
+  border: 1px solid #000000;
+}
